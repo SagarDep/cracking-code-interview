@@ -7,20 +7,24 @@ import array.strings.Ex5;
 import array.strings.Ex8;
 import linkedlists.CharList;
 import linkedlists.LinkedList;
+import stack.queues.Stack;
 
 public class Main {
 
 	public static void main(String[] args) {
-		CharList l1=new CharList();
-		l1.appendToTail('a');
-		l1.appendToTail('b');
-		l1.appendToTail('c');
-		l1.appendToTail('d');
-		l1.appendToTail('e');
+		Stack stack=new Stack();
+		stack.push(1);
+		stack.push(4);
+		stack.push(3);
+		stack.push(2);
 
-		l1.printNodes();
-		l1.delete(l1.find('e'));
-		l1.printNodes();
+		stack.print();
+
+		stack.pop();
+		stack.pop();
+		stack.pop();
+
+		stack.print();
 	}
 
 }
