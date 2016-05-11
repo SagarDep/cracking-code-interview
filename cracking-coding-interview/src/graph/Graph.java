@@ -24,4 +24,8 @@ public class Graph {
 			System.out.println();
 		});
 	}
+	
+	public void dfs(){
+		
+	}
 }
