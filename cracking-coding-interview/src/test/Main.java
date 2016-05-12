@@ -4,6 +4,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import graph.Graph;
+import graph.Stack;
 
 public class Main {
 
@@ -15,6 +16,10 @@ public class Main {
 		graph.insert('D', Stream.of('A').collect(Collectors.toList()));
 		graph.insert('E', Stream.of('B').collect(Collectors.toList()));
 		graph.insert('F', Stream.of('B','C').collect(Collectors.toList()));
+		graph.print();
+		System.out.println();
+		graph.dfs();
+
 	}
 
 }
